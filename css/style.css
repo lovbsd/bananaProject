@@ -118,15 +118,23 @@ p {
   margin: 4px 0;
 }
 #navbar {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #e6d68a;
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
+  transition: all var(--animation-duration) ease-in-out;
+}
+#navbar.navbar--dark {
+  background-color: #e6d68a;
 }
 /* navber */
 .navber_menu {
   display: flex;
+  margin: auto;
 }
 .navbar_logo {
   font-size: var(--font-medium);
@@ -148,6 +156,7 @@ p {
 }
 
 #home {
+  padding-top: 120px;
   padding: 40px;
   text-align: center;
 }
@@ -184,7 +193,7 @@ p {
 /* About */
 .about_majors {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 80px 0;
 }
 .major__icon {
@@ -391,6 +400,12 @@ p {
 .contact__links :hover {
   transform: scale(1.1);
   color: var(--color-yellow);
+}
+.globalMenubar {
+  right: 50px;
+  font-size: 2em;
+  position: fixed;
+  color: black;
 }
 
 @media screen and (max-width: 768px) {
