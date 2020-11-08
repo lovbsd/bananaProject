@@ -331,6 +331,10 @@ p {
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> e1ed3677777de718f14ebe65e9cfe8568cf186c3
 .projectfrom {
   opacity: 1;
   transition: all var(--animation-duration) ease-out;
