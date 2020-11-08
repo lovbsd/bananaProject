@@ -25,33 +25,50 @@
             <i class="fas fa-splotch"></i>
             <a href="#">seongbo</a>
         </div>
-        <div class="navber_menu">
-            <ul class="navber_menu">
-                <li class="navber_menu_item active">Home</li>
-                <li class="navber_menu_item">about</li>
-                <li class="navber_menu_item">skills</li>
-                <li class="navber_menu_item">My work</li>
-                <li class="navber_menu_item">testimonials</li>
-                <li class="navber_menu_item">content</li>
+        <div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu_item active" data-link="#home">Home</li>
+                <li class="navbar__menu_item" data-link="#about">about</li>
+                <li class="navbar__menu_item" data-link="#skills">skills</li>
+                <li class="navbar__menu_item" data-link="#work">My work</li>
+                <li class="navbar__menu_item" data-link="#contect">content</li>
             </ul>
         </div>
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
 
     </nav>
 
     <!-- Home -->
     <section id="home" style="background: url('imgs/usingimg/bimg.png') center/cover no-repeat;">
-        <img class="profileimg home__avatar" src="imgs/usingimg/profileimg.jpeg" alt="seongboimg">
-        <h1 class="home__title">Hello, <br />I'm seongbo Trying</h1>
-        <h2 class="home__description">This is Seongbo Shim working for the future.</h2>
-        <button class="home__contact">Contact Me</button>
-        <i class="fas fa-angle-up globalMenubar"></i>
+        <div class="home__container">
+            <img class="profileimg home__avatar" src="imgs/usingimg/profileimg.jpeg" alt="seongboimg">
+            <h1 class="home__title">Hello, <br />I'm seongbo Trying</h1>
+            <h2 class="home__description">This is Seongbo Shim working for the future.</h2>
+            <button class="home__contact">Contact Me</button>
+        </div>
     </section>
     <!-- about -->
     <section id="about" class="section section__container">
         <h1> About me</h1>
-        <p>
-        <h1>here your description!!</h1>
-        </p>
+        <div class="divsection">
+            <p class="job__name">
+
+                공부를 시작하게된이후로 개발에 흥미가 생겨 이것 저것 해보았지만 막연하게도, 혼자서 많은 지식을 얻기엔 한없이 부족하고 한계에 머물러 있다는 것을 깨닫고 대외활동을 해야겠다는
+                결심이
+                섰습니다.
+                프로그램개발 관련 세미나, 프로젝트경험 등을 통해 사람들과의 소통의 중요함을 다시금 느끼고 국비학원을 등록하여 전반적으로 기획부터 프론트엔드및 백 엔드 과정 교육을 받으며
+                프로그램역량
+                및 기초를
+                쌓을 수 있었고, 팀 프로젝트를 진행하면서 팀장, 팀원 들과 함께 협업을 통해 진행하면서 때로는 토론의 장을 열며 저처럼 개발능력이 부족한 부분을 함께 채워가며
+                이끌어주었고, 숨김없이
+                개발지식을
+                공유하며 개발능력 또한 한층 더 성장하였습니다.
+                저에게 있어서 출발선은 현재진행형이며 끝이보이지않는 결승선을 위해 한발 한발 다가가기보다, 끊임없이 자기발전을 위해 노력하고 또 노력하는 삶을 사는 것입니다.
+
+            </p>
+        </div>
         <div class="about_majors">
 
             <div class="major">
@@ -79,8 +96,8 @@
                 </div>
                 <div class="major__title">Back-end</div>
                 <div class="major__description">
-                    JAVA, ORACLE,SPRING FRAMEWORK,
-                    <br />SERVLET, JSP
+                    C, JAVA, SERVLET,
+                    <br /> JSP, SPRING
                 </div>
             </div>
         </div>
@@ -130,10 +147,10 @@
                     <div class="skill">
                         <div class="skill__description">
                             <span>css</span>
-                            <span>65%</span>
+                            <span>85%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value" style="width: 65%;"></div>
+                            <div class="skill__value" style="width: 85%;"></div>
                         </div>
                     </div>
                     <div class="skill">
@@ -221,82 +238,97 @@
     <section id="work" class="section">
         <h1>My work</h1>
         <h3>Projects</h3>
+        <video controls autoplay width="480">
+            <source src="imgs/jobs/4조 영상.mp4" type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
         <div class="work__categories">
-            <button class="category__btn">All<span class="category__count">8</span></button>
-            <button class="category__btn">Front-end<span class="category__count">3</span></button>
-            <button class="category__btn">Back-end<span class="category__count">2</span></button>
+            <button class="category__btn selected" data-filter="*">All<span class="category__count">3</span></button>
+            <button class="category__btn" data-filter="TeamProject">Team Project<span
+                    class="category__count">2</span></button>
+            <button class="category__btn" data-filter="JavaApp">Java Swing<span
+                    class="category__count">1</span></button>
         </div>
-        <div class="slideTabWrap">
-            <!-- slider1 Start -->
-            <div class="slideTab slideTab0">
-                <div class="owl-carousel slideCarousel0">
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/coffee.svg" alt=""></a>
-                    </div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/coffee1.svg" alt=""></a>
-                    </div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/coffee2.svg" alt=""></a>
-                    </div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/coffee3.svg" alt=""></a>
-                    </div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/coffee4.svg" alt=""></a>
-                    </div>
+        <div class="projectfrom">
+            <div class="slideTabWrap">
+                <!-- slider1 Start -->
+                <div class="slideTab slideTab0">
 
+                    <div class="owl-carousel slideCarousel0 ">
+
+                        <div class="item"><a class="projects" target="blank" data-type="JavaApp"><img
+                                    style="width: 100%;" src="imgs/PPTimg/coffee.svg" alt=""></a>
+                        </div>
+                        <div class="item"><a class="projects" target="blank" data-type="JavaApp"><img
+                                    style="width: 100%;" src="imgs/PPTimg/coffee1.svg" alt=""></a>
+                        </div>
+                        <div class="item"><a class="projects" target="blank" data-type="JavaApp"><img
+                                    style="width: 100%;" src="imgs/PPTimg/coffee2.svg" alt=""></a>
+                        </div>
+                        <div class="item"><a class="projects" target="blank" data-type="JavaApp"><img
+                                    style="width: 100%;" src="imgs/PPTimg/coffee3.svg" alt=""></a>
+                        </div>
+                        <div class="item"><a class="projects" target="blank" data-type="JavaApp"><img
+                                    style="width: 100%;" src="imgs/PPTimg/coffee4.svg" alt=""></a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="slideTabWrap">
-            <!-- slider1 Start -->
-            <div class="slideTab slideTab0">
-                <div class="owl-carousel slideCarousel0">
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/fristimg.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/fristimg2.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/fristimg3.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/fristimg4.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/fristimg5.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/fristimg6.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/fristimg7.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/fristimg8.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/fristimg9.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/fristimg10.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/fristimg11.png"
-                                alt=""></a></div>
+            <div class="slideTabWrap">
+                <!-- slider1 Start -->
+                <div class="slideTab slideTab0">
+                    <div class="owl-carousel slideCarousel0">
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/fristimg.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/fristimg2.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/fristimg3.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/fristimg4.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/fristimg5.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/fristimg6.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/fristimg7.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/fristimg8.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/fristimg9.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/fristimg10.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/fristimg11.png" alt=""></a></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="slideTabWrap">
-            <!-- slider1 Start -->
-            <div class="slideTab slideTab0">
-                <div class="owl-carousel slideCarousel0">
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/secondimg.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/secondimg2.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/secondimg3.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/secondimg4.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/secondimg5.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/secondimg6.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/secondimg7.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/secondimg8.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/secondimg9.png"
-                                alt=""></a></div>
-                    <div class="item"><a href="#"><img style="width: 160.5px;" src="imgs/PPTimg/secondimg10.png"
-                                alt=""></a></div>
+            <div class="slideTabWrap">
+                <!-- slider1 Start -->
+                <div class="slideTab slideTab0">
+                    <div class="owl-carousel slideCarousel0">
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/secondimg.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/secondimg2.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/secondimg3.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/secondimg4.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/secondimg5.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/secondimg6.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/secondimg7.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/secondimg8.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/secondimg9.png" alt=""></a></div>
+                        <div class="item"><a class="projects" target="blank" data-type="TeamProject"><img
+                                    style="width: 100%;" src="imgs/PPTimg/secondimg10.png" alt=""></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -306,6 +338,8 @@
     <section id="contect" style="background-color: #e6d68a;" class="section">
         <h1 class="contact__title">Let's talk</h1>
         <h1 class="contact__title">shim227.ss@gmail.com</h1>
+        <h1 class="contact__title"><a href="tel:010-4446-5174">TEL:010-4446-5174</a></h1>
+        <h1 class="contact__title">Thank You</h1>
         <div class="contact__links">
             <a href="https://github.com/lovbsd" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-github"></i>
@@ -315,6 +349,10 @@
             </a>
         </div>
     </section>
+
+    <button class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
 
 </body>
