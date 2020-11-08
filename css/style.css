@@ -331,10 +331,6 @@ p {
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
-.divsection {
-  display: inline-flex;
-  width: 500px;
-}
 .projectfrom {
   opacity: 1;
   transition: all var(--animation-duration) ease-out;
